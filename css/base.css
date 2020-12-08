@@ -1,0 +1,254 @@
+@font-face {
+  font-family: "goldman-regular";
+  src: url("../fonts/Goldman-Regular.ttf");
+}
+
+body {
+  font-family: "goldman-regular";
+  padding-top: 80px;
+}
+
+body a:hover {
+  text-decoration: none;
+}
+
+.header {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #3e648f;
+  color: #ffffff;
+  border-bottom: 5px solid #000000;
+}
+
+.header .buscador {
+  margin-top: 10px;
+  width: 100px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-bottom: 2px solid #96c3fa;
+}
+
+.header ::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.header .contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .contacto div {
+  height: 1.5em;
+}
+
+.header .contacto p {
+  font-size: 0.9em;
+}
+
+.header h1 {
+  font-size: 2em;
+}
+
+.header a {
+  color: #ffffff;
+}
+
+.header a :hover {
+  color: #96c3fa;
+}
+
+.header .fas {
+  margin: 0px 0px 0px 5px;
+}
+
+aside {
+  z-index: 9;
+  position: fixed;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 7px 0px 0px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+aside ul {
+  font-size: 0.7em;
+  margin-left: -30px;
+  list-style: none;
+}
+
+aside a {
+  color: #96c3fa;
+}
+
+aside a :hover {
+  color: #ffffff;
+}
+
+.tarjetas {
+  display: none;
+  max-width: 330px;
+  min-width: 330px;
+}
+
+.tarjetas .tarjeta {
+  position: relative;
+  margin: 30px 0px 15px 0px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 300px;
+  height: 200px;
+  -webkit-box-shadow: 5px 5px 5px 0px #d6cfd6;
+          box-shadow: 5px 5px 5px 0px #d6cfd6;
+}
+
+.tarjetas .tarjeta .nombreCompleto {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  background: #000000;
+  height: 25px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.tarjetas .tarjeta .nombreCompleto h1 {
+  color: #ffffff;
+  padding: 2px 10px 0px 10px;
+  font-size: 1em;
+}
+
+.tarjetas .tarjeta .cabecera {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 50%;
+}
+
+.tarjetas .tarjeta .cabecera .foto {
+  height: 90%;
+}
+
+.tarjetas .tarjeta .cabecera .edad {
+  position: absolute;
+  top: 55px;
+  left: 65px;
+  height: 38px;
+  width: 38px;
+  background-color: #3e648f;
+  color: #ffffff;
+  padding: 5px;
+  border: 3px solid #ffffff;
+  border-radius: 100%;
+}
+
+.tarjetas .tarjeta .cabecera .edad .age {
+  font-size: 1em;
+}
+
+.tarjetas .tarjeta .cabecera ul {
+  font-size: .7em;
+  list-style: none;
+}
+
+.tarjetas .tarjeta .cabecera ul li {
+  display: inline;
+  padding: 10px;
+}
+
+.tarjetas .tarjeta .cabecera a {
+  color: #96c3fa;
+}
+
+.tarjetas .tarjeta .cabecera a:hover {
+  color: #3e648f;
+}
+
+.tarjetas .tarjeta .info {
+  width: 100%;
+  height: 50%;
+}
+
+.tarjetas .tarjeta .info ul {
+  color: #000000;
+  font-size: .75em;
+  margin: 10px 0px 0px -30px;
+  list-style: none;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: table;
+  font-size: .8em;
+  color: #000;
+}
+
+.modal .modal-container {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.modal .modal-body {
+  display: inline-block;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  padding: 10px;
+  width: 90%;
+  max-width: 300px;
+  text-align: right;
+  border-radius: 5px;
+}
+
+.modal .modal-body span {
+  width: 100px;
+}
+
+.modal .modal-body input, .modal .modal-body select {
+  border: 0px;
+  border-bottom: 1px solid #3e648f;
+  background: transparent;
+  max-width: 200px;
+  color: #96c3fa;
+}
+
+.modal .modal-body input[type='number'] {
+  text-align: right;
+  max-width: 65px;
+}
+
+.modal .modal-body .btn-danger {
+  background-color: #96c3fa;
+  border-color: #96c3fa;
+}
+
+.modal .modal-body .btn-primary {
+  background-color: #3e648f;
+  border-color: #3e648f;
+}
+
+.modal-hidden {
+  display: none;
+}
+
+.modal-blur {
+  -webkit-filter: blur(8px);
+  -moz-filter: blur(8px);
+  -o-filter: blur(8px);
+  -ms-filter: blur(8px);
+  filter: blur(8px);
+}
